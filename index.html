@@ -20,29 +20,17 @@ h1{font-size:clamp(43px,7vw,78px);line-height:.96;letter-spacing:-.055em;margin:
 footer{margin-top:72px;padding-top:28px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;color:var(--muted);font-size:14px}.footer-links{display:flex;gap:14px;flex-wrap:wrap}.footer-links a{color:#ddd7eb}
 @media(max-width:900px){nav{display:none}.hero{grid-template-columns:1fr;min-height:auto}.phone-frame{max-width:360px}.grid-3,.grid-2{grid-template-columns:1fr}.wrap{padding:24px 18px 60px}.section{padding-top:54px}}
 
-.hero-mockup img {
-  width: 2600px;   /* büyüt */
-  max-width: none;
-}
-
-
-.hero-mockup img {
-  width: 650px;
-  transform: translateX(-40px);
-  filter: drop-shadow(0 60px 120px rgba(0,0,0,.9));
-}
-  
 .hero-mockup {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
 }
 
 .hero-mockup img {
-  width: min(520px, 100%);
+  width: 700px; /* buradan büyüt */
   height: auto;
-  display: block;
-  filter: drop-shadow(0 40px 90px rgba(0,0,0,.75));
+  transform: translateX(80px); /* sağa kaydır */
+  filter: drop-shadow(0 60px 120px rgba(0,0,0,.9));
 }
 
 @media(max-width:900px){
